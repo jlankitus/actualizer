@@ -18,7 +18,7 @@ public class ReceiveUDP : MonoBehaviour
     [ContextMenu("StartThread")]
     void Start()
     {
-        udp = new UdpClient(7400);
+        udp = new UdpClient(462);
         threadOn = true;
         thread = new Thread(new ThreadStart(ThreadMethod));
         thread.Start();
